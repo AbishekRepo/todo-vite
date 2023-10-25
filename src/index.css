@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Form Styles */
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  margin-right: 5px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* Styling for the list container */
+
+.list-elements {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.list-container {
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Styling for the list items */
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 5px;
+}
+
+li {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Styling for the close button */
+button {
+  color: red;
+  font-size: 10px;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  transition: 0.1s;
+}
+
+button:hover {
+  font-size: 11px;
+}
+
+/* Center the close button vertically with flexbox */
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
