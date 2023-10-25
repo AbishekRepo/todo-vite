@@ -33,6 +33,13 @@ export function AppProvider({ children }) {
     }
   }
 
+  function updateText(id, newText) {
+    const updatedData = list.map((item) => {
+      return item.id == id ? { ...item, text: newText } : item;
+    });
+    setList(updatedData);
+  }
+
   function close(id) {
     let newData = list.filter((item) => item.id !== id);
     setList(newData);
@@ -43,6 +50,7 @@ export function AppProvider({ children }) {
     form,
     setForm,
     handleSumbit,
+    updateText,
     close,
   };
 
