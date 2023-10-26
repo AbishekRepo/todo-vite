@@ -97,3 +97,14 @@ ul li {
   justify-content: space-between;
   align-items: center;
 }
+
+/* homepage style */
+.navbar {
+  min-height: 50px;
+  background-color: #333;
+
+  .navLink {
+    font-size: 20px;
+    color: #fff;
+  }
+}
