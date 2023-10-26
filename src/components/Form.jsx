@@ -1,8 +1,8 @@
 import React, { ChangeEvent, FormEvent } from "react";
 
-function Form({ form, setForm, handleSumbit }) {
+function Form({ form, setForm, handleSubmit }) {
   return (
-    <form onSubmit={handleSumbit} className="form-container">
+    <form onSubmit={handleSubmit} className="form-container">
       <input
         type="text"
         value={form}

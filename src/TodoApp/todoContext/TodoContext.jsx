@@ -3,11 +3,11 @@ import { v4 as uuidv4 } from "uuid";
 
 const AppContext = createContext();
 
-export function useAppContext() {
+export function useTodoAppContext() {
   return useContext(AppContext);
 }
 
-export function AppProvider({ children }) {
+export function TodoAppProvider({ children }) {
   const [list, setList] = useState(getStoredItem() || []);
   const [form, setForm] = useState("");
 
@@ -22,7 +22,7 @@ export function AppProvider({ children }) {
     return storedItem ? JSON.parse(storedItem) : [];
   }
 
-  function handleSumbit(e) {
+  function handleSubmit(e) {
     e.preventDefault();
     const newText = {
       id: uniqueId,
@@ -49,7 +49,7 @@ export function AppProvider({ children }) {
     list,
     form,
     setForm,
-    handleSumbit,
+    handleSubmit,
     updateText,
     close,
   };

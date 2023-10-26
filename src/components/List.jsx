@@ -1,8 +1,8 @@
 import { FaPencilAlt, FaTimes } from "react-icons/fa";
-import { useAppContext } from "../context/AppContext";
+import { useTodoAppContext } from "../TodoApp/todoContext/TodoContext";
 
 function List({ list, close }) {
-  const { updateText } = useAppContext();
+  const { updateText } = useTodoAppContext();
 
   function handleUpdate(id) {
     const newData = prompt("Enter updated data");
