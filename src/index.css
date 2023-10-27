@@ -1,16 +1,16 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #0d1117;
+  color: #fff;
 }
 
 .container {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   margin-bottom: 15px;
@@ -26,12 +26,14 @@ body {
 
 input[type="text"] {
   flex: 1;
+  color: #fff;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #484f58;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 15px;
   outline: none;
   margin-right: 5px;
+  background-color: #0d1117;
 }
 
 button[type="submit"] {
@@ -55,12 +57,11 @@ button[type="submit"] {
 }
 
 .list-container {
-  /* border: 1px solid #ccc; */
   border-radius: 15px;
-  border: 0.5px solid rgb(159, 159, 159);
-  padding: 0px 8px;
-  margin-right: 5px;
-  margin-bottom: 5px;
+  background-color: #30363d;
+  padding: 0px 30px;
+  margin-right: 15px;
+  margin-bottom: 10px;
 }
 
 /* Styling for the list items */
@@ -71,11 +72,6 @@ ul {
   gap: 5px;
 }
 
-li {
-  font-size: 16px;
-  margin: 5px 0;
-}
-
 /* Styling for the close button */
 button {
   color: rgb(252, 80, 80);
@@ -83,7 +79,7 @@ button {
   border: none;
   background: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 5px;
   transition: 0.1s;
 }
 
@@ -92,19 +88,16 @@ button:hover {
 }
 
 /* Center the close button vertically with flexbox */
-ul li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 /* homepage style */
 .navbar {
   min-height: 50px;
-  background-color: #333;
+  background-color: #0d1117;
 
   .navLink {
-    font-size: 20px;
+    margin: 5px 0 0 5px;
+    font-size: 16px;
     color: #fff;
+    text-decoration: none;
   }
 }
