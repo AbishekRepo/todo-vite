@@ -1,5 +1,5 @@
 import { FaPencilAlt, FaTimes } from "react-icons/fa";
-import { useTodoAppContext } from "../TodoApp/todoContext/TodoContext";
+import { useTodoAppContext } from "../todoContext/TodoContext";
 
 function List({ list, close }) {
   const { updateText } = useTodoAppContext();

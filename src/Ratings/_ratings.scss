@@ -1,0 +1,21 @@
+.rating-container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .model {
+    background-color: #30363d;
+    padding: 60px 80px;
+    border-radius: 30px;
+    position: relative;
+    color: white;
+  }
+
+  .rating-text {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+}

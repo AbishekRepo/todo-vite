@@ -1,3 +1,5 @@
+@import "./Ratings/ratings";
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,6 +8,14 @@ body {
   background-color: #0d1117;
   color: #fff;
 }
+
+.site-map {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+}
+
+// Todo CSS
 
 .container {
   max-width: 600px;

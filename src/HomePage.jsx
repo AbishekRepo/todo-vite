@@ -2,15 +2,11 @@ import { NavLink, Outlet } from "react-router-dom";
 
 export const AppList = () => {
   return (
-    <>
+    <div className="site-map">
       <NavLink to="todo-app">Todo App</NavLink>
-    </>
+      <NavLink to="ratings-app">Ratings App</NavLink>
+    </div>
   );
-};
-
-const navStyle = {
-  minHeight: "50px",
-  backgroundColor: "#333",
 };
 
 const HomePage = () => {
