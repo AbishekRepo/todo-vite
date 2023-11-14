@@ -5,6 +5,7 @@ export const AppList = () => {
     <div className="site-map">
       <NavLink to="todo-app">Todo App</NavLink>
       <NavLink to="ratings-app">Ratings App</NavLink>
+      <NavLink to="Text-Expander">Text Expander</NavLink>
     </div>
   );
 };
