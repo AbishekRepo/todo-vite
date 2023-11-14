@@ -1,6 +1,7 @@
 import HomePage, { AppList } from "../HomePage";
-import TodoApp from "../TodoApp";
-import Ratings from "../Ratings/Ratings";
+import TodoApp from "../Apps/TodoApp";
+import Ratings from "../Apps/Ratings/Ratings";
+import TextExpander from "../Apps/TextExpander/TextExpander";
 
 export default [
   {
@@ -18,6 +19,10 @@ export default [
       {
         path: "ratings-app",
         component: Ratings,
+      },
+      {
+        path: "Text-Expander",
+        component: TextExpander,
       },
     ],
   },
