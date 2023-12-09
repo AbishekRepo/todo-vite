@@ -1,6 +1,6 @@
 import React from "react";
 
-const SearchBar = ({ setSearchMovies, searchMovies }) => {
+const SearchBar = ({ setSearchMovies, searchMovies, total }) => {
   return (
     <nav className="searchbox-Container">
       <h2>moviehub</h2>
@@ -11,7 +11,7 @@ const SearchBar = ({ setSearchMovies, searchMovies }) => {
         value={searchMovies}
         onChange={(e) => setSearchMovies(e.target.value)}
       />
-      <p>This is the total needed</p>
+      <p>{total} results found</p>
     </nav>
   );
 };

@@ -61,11 +61,14 @@ const MovieHub = () => {
     setSelectedMovie(data);
   }
 
+  const totalFoundMovies = movies.length;
+
   return (
     <>
       <SearchBar
         setSearchMovies={setSearchMovies}
         searchMovies={searchMovies}
+        total={totalFoundMovies}
       />
       <div className="movie-container">
         <Box>
