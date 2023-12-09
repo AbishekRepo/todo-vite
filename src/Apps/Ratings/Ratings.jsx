@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "./ratings.module.scss";
 
 const Ratings = ({ ratings = 5 }) => {
   const [rating, setRating] = useState(0);
@@ -13,8 +14,8 @@ const Ratings = ({ ratings = 5 }) => {
   }
 
   return (
-    <div className="rating-container">
-      <div className="model">
+    <div className={styles.ratingContainer}>
+      <div className={styles.model}>
         <h5>Please rate your experience</h5>
         {Array.from({ length: ratings }, (_, index) => {
           return (
@@ -28,7 +29,7 @@ const Ratings = ({ ratings = 5 }) => {
             />
           );
         })}
-        <span className="rating-text">{hover || rating || 0}</span>
+        <span className={styles.ratingsText}>{hover || rating || 0}</span>
       </div>
     </div>
   );

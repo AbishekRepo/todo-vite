@@ -2,6 +2,7 @@ import HomePage, { AppList } from "../HomePage";
 import TodoApp from "../Apps/TodoApp";
 import Ratings from "../Apps/Ratings/Ratings";
 import TextExpander from "../Apps/TextExpander/TextExpander";
+import MovieHub from "../Apps/Movie-Hub/MovieHub";
 
 export default [
   {
@@ -23,6 +24,10 @@ export default [
       {
         path: "Text-Expander",
         component: TextExpander,
+      },
+      {
+        path: "Movie-Hub",
+        component: MovieHub,
       },
     ],
   },

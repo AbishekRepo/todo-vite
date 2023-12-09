@@ -1,0 +1,17 @@
+@import "../../../../styles/mixins";
+
+.movielist-card {
+  display: flex;
+  gap: 10px;
+  border: 1px solid #0d1117;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 12px;
+
+  img {
+    border-radius: 8px;
+    margin-block: 2px;
+  }
+}
