@@ -22,7 +22,7 @@ const MovieHub = () => {
         setError(null);
         if (searchMovies.trim() !== "") {
           const res = await fetch(
-            `http://www.omdbapi.com/?s=${movieSearch}&apikey=340a9272`
+            `https://www.omdbapi.com/?s=${movieSearch}&apikey=340a9272`
           );
 
           if (!res.ok) {
@@ -56,7 +56,7 @@ const MovieHub = () => {
   }, [searchMovies]);
 
   async function handleSelect(id) {
-    const res = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=340a9272`);
+    const res = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=340a9272`);
     const data = await res.json();
     setSelectedMovie(data);
   }
