@@ -1,0 +1,18 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+.searchbox-Container {
+  @include flexbox($justify-content: space-around);
+  background-color: $box-color;
+  margin: 0 16px;
+  border-radius: 10px;
+
+  .searchbox-input {
+    flex: 0;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding-right: 100px;
+  }
+}
