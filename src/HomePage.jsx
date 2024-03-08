@@ -7,6 +7,7 @@ export const AppList = () => {
       <NavLink to="ratings-app">Ratings App</NavLink>
       <NavLink to="Text-Expander">Text Expander</NavLink>
       <NavLink to="Movie-Hub">Movie Hub</NavLink>
+      <NavLink to="Reducer">Bank App ( Reducer )</NavLink>
     </div>
   );
 };

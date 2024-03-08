@@ -3,6 +3,7 @@ import TodoApp from "../Apps/TodoApp";
 import Ratings from "../Apps/Ratings/Ratings";
 import TextExpander from "../Apps/TextExpander/TextExpander";
 import MovieHub from "../Apps/Movie-Hub/MovieHub";
+import ReducerBank from "../Apps/ReducerBank/ReducerBank";
 
 export default [
   {
@@ -28,6 +29,10 @@ export default [
       {
         path: "Movie-Hub",
         component: MovieHub,
+      },
+      {
+        path: "Reducer",
+        component: ReducerBank,
       },
     ],
   },
