@@ -8,6 +8,7 @@ export const AppList = () => {
       <NavLink to="Text-Expander">Text Expander</NavLink>
       <NavLink to="Movie-Hub">Movie Hub</NavLink>
       <NavLink to="Reducer">Bank App ( Reducer )</NavLink>
+      <NavLink to="SearchDropDown">Search Box</NavLink>
     </div>
   );
 };

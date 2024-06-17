@@ -4,6 +4,7 @@ import Ratings from "../Apps/Ratings/Ratings";
 import TextExpander from "../Apps/TextExpander/TextExpander";
 import MovieHub from "../Apps/Movie-Hub/MovieHub";
 import ReducerBank from "../Apps/ReducerBank/ReducerBank";
+import SearchDropDown from "../Apps/SearchDropDown/SearchDropDown";
 
 export default [
   {
@@ -33,6 +34,10 @@ export default [
       {
         path: "Reducer",
         component: ReducerBank,
+      },
+      {
+        path: "SearchDropDown",
+        component: SearchDropDown,
       },
     ],
   },
