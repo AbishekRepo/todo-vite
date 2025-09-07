@@ -1,4 +1,3 @@
-import React from "react";
 import Expander from "./components/Expander";
 
 const TextExpander = () => {

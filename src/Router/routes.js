@@ -5,6 +5,7 @@ import TextExpander from "../Apps/TextExpander/TextExpander";
 import MovieHub from "../Apps/Movie-Hub/MovieHub";
 import ReducerBank from "../Apps/ReducerBank/ReducerBank";
 import SearchDropDown from "../Apps/SearchDropDown/SearchDropDown";
+import Useref from "../Apps/hooks/useref-usecases/useref";
 
 export default [
   {
@@ -38,6 +39,10 @@ export default [
       {
         path: "SearchDropDown",
         component: SearchDropDown,
+      },
+      {
+        path: "useref",
+        component: Useref,
       },
     ],
   },
